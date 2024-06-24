@@ -1,0 +1,451 @@
+/* Kelsey Hodge */
+/* Course: CGS1821.0M1 */
+/* Date: 08/02/23 */
+/* Assignment: Final Project */
+
+
+/*************************/
+/*styles for the elements*/
+/*************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: rgb(250, 249, 249);
+    font-size: 100%;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    border: 1px solid black;
+    /* change the body so it uses grid layout */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "head head"
+                         "navi navi"
+                         "main main"
+                         "foot foot";               
+}
+
+/*************************/
+/**styles for the header**/
+/*************************/
+header {
+    border-bottom: 1px solid black;
+    background-color: rgb(250, 249, 249);
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    /* assign grid area for the header */
+    grid-area: head;
+    width: 100%;
+}
+header img {
+    float:left;   
+    padding-left: 2%;
+    padding-right: 1%;
+    height: auto;
+    width: 22%;
+    max-width: 80px;
+    min-height: 40px;
+    margin-right: 1em;
+}
+header h2 {
+    color: #1d1d1d;
+    font-size: 200%;
+    text-align: left;
+    padding-bottom: .5em;
+}
+header h3 {
+    font-size: 150%;
+    padding: 0em;
+    text-align: left;
+    color: #1d1d1d;
+}
+/*******************************/
+/*** styles for the nav menu ***/
+/*******************************/
+#mobile_menu {
+    display: none;
+}
+#nav_menu {
+   /* assign grid area for the nav menu */
+    grid-area: navi;
+}
+#nav_menu ul li a.current {
+	color: rgb(250, 249, 249);
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    position: relative;   
+    /* change navigation menu to use grid layout */
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+}
+#nav_menu a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #5fb0f6;
+    border-bottom: 1px solid #1d1d1d;
+	color: #1d1d1d;
+	font-weight: 700;
+    font-size: 120%;
+}
+#nav_menu ul li {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+#nav_menu li a:visited {
+    color: #1d1d1d;
+}
+#nav_menu ul a:hover, a:focus {
+    color: rgb(250, 249, 249);
+    text-decoration: underline;
+}
+/* assign grid areas for the nav menu items */
+#nav_menu #nm1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+#nav_menu #nm2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+#nav_menu #nm3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+#nav_menu #nm4 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+#nav_menu #nm5 {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+
+/***********************************/
+/*** styles for the main content ***/
+/***********************************/
+main {
+    /* assign main grid area and set main element to grid */
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 68% 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "sec1 side"
+                         "sec2 sec2";
+    padding: 2.5%;
+    padding-top: 1.25%;
+    margin: 0%;
+}
+main h2 {
+    text-align: center;
+}
+main img {
+    max-width: 150px;
+    width: 80%;
+    padding-left: 4em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
+
+/**************************/
+/** styles for the aside **/
+/**************************/
+aside {
+   padding-right: 1em;
+    /* create grid area for the sidebar */
+   grid-area: side;  
+}
+aside h2 {
+    font-size: 150%;
+    padding: 1em;
+    color: #1d1d1d;
+    font-weight: 700;
+}
+aside ul {
+    color: #1d1d1d;
+    list-style-type: none;
+    align-items: center;
+}
+aside ul li {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+
+aside ul li a:visited {
+    color: #1d1d1d;
+}
+aside ul li a:hover, a:focus {
+    color: #5fb0f6;
+}
+aside ul li a {
+    line-height: 1.5;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    color: #1d1d1d;
+    padding-bottom: .25em;
+}
+
+/****************************/
+/** styles for the section **/
+/****************************/
+#sec1 {
+    /* create grid area for the section */
+   color: #1d1d1d;
+   padding: .5em 0em;
+   grid-area: sec1;
+}
+/* create grid area for sec2 */
+#sec2 {
+    grid-area: sec2;
+    border-top: 1px solid black;
+}
+section h2 {
+    font-size: 180%;
+}
+section h3 {
+    font-size: 110%;
+    text-align: center;
+}
+section img {
+    max-width: 180px;
+    min-width: 80px;
+    padding: .25em;
+    width: 70%;
+    clear: left;
+}
+#sec2_div_container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "div1 div2";
+}
+#sec2_div_container #div1 {
+    float: left;
+}
+#div1 {
+    grid-area: div1;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#div1 h3 {
+    padding: .25em;
+}
+#div1 a {
+    color: #1d1d1d;
+    font-size: 110%;
+}
+#div1 a:hover, a:focus {
+    color: #5fb0f6;
+}
+#div2 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    grid-area: div2;
+}
+#div2 h3 {
+    padding: .25em;
+}
+#div2 a {
+    color: #1d1d1d;
+    font-size: 110%;
+}
+#div2 a:hover {
+    color:#5fb0f6;
+}
+#div3 {
+    /* set #div3 to show as a grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+}
+.p_padding {
+    padding-bottom: .5em;
+    padding: .25em .5em;
+    font-size: 120%;
+}
+.h2_size {
+    font-size: 120%;
+    text-align: center;
+    padding: 1em;
+}
+.animation {
+    color: #1d1d1d;
+    font-size: 180%;
+    text-align: center;
+    /* make the h2 element an animation */
+    animation: color 4s linear infinite;
+}
+/* set the parameters of the h2 animation */
+@keyframes color {
+    0%{
+      color:#a0ce89;
+    }
+    20%{
+      color:#f7cf80;
+    }
+    40%{
+      color:#eeac75;
+    }
+    60%{
+      color:#dd7e7d;
+    }
+    80%{
+      color:#b770bf;
+    }
+    100%{
+      color:#7db9e2;
+    }
+}
+
+/***************************/
+/** styles for the footer **/
+/***************************/
+footer {
+    border-top: 1px solid #1d1d1d;
+    background-color: #5fb0f6;
+    grid-area: foot;
+    padding: .5em;
+    }
+footer p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 80%;
+    color: #1d1d1d;
+    padding-top: .25em;
+    padding-bottom: .5em;
+    }
+footer a:link {
+    color: #1d1d1d;
+}
+footer a:visited {
+    color: black;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+footer a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+/******************************************************************/
+/******************* styles for the media queries******************/
+/******************************************************************/
+@media screen and (max-width: 900px) {
+    body {
+        border: none;
+        font-size: 90%;
+    }
+    section {
+        padding: 1% 5%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    body {
+        font-size: 80%;
+        border: none;
+        /* set body to use grid layout */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "head"
+            "navi"
+            "main"
+            "foot";
+    }
+    main {
+        /* set main grid-area and set main to use grid layout */
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        /* set main grid areas */
+        grid-template-areas: "sec1"
+                             "sec2"
+                             "side";
+       }
+    #nav_menu {
+        /* hide the nav menu */
+        display: none;
+    }  
+    #mobile_menu {
+        /* display the mobile menu */
+        display: block;
+        /* assign grid area for mobile menu */
+        grid-area: navi;
+    }
+    /* change background color of mobile menu and change padding */
+    .slicknav_menu {
+        background: #5fb0f6 !important;
+        padding: 3px;
+        border-bottom: 1px solid black;
+    }
+    .slicknav ul {
+        background-color: #5fb0f6;
+    }
+   /* change background color of mobile menu a elements */
+   #mobile_menu a {
+        background: #5fb0f6;
+        color: #1d1d1d;
+        font-size: 115%;
+   }
+   /* change color of a elements on hover or focus */
+   #mobile_menu a:hover, a:focus {
+        color: rgb(250, 249, 249);
+   }
+   #side {
+        /* define the grid area for side */
+        grid-area: side;
+    }
+   #div3 {
+        clear: both;
+        /* set #div3 to use grid layout */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    #side ul {
+        text-align: center;
+    }
+   footer {
+    /* define the grid area the footer */
+    grid-area: foot;
+   }
+}
+
+@media screen and (max-width: 479px){
+    body {
+        font-size: 69%;
+    }
+    section #div1 {
+        padding-left: 0;
+    }
+    #side ul {
+        padding: 0;
+    }
+    p.p_padding {
+        text-align: center;
+    }
+    aside ul a {
+        font-size: 110%;
+    }
+}
+
+
+
+

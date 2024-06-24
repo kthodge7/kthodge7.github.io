@@ -1,0 +1,509 @@
+/* Kelsey Hodge */
+/* Course: CGS1821.0M1 */
+/* Date: 08/02/23 */
+/* Assignment: Final Project */
+
+/*****************************/
+/** styles for the elements **/
+/*****************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: rgb(250, 249, 249);
+    font-size: 100%;
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    border: 1px solid #1d1d1d;
+    /* change the body so it uses grid layout */
+    display: grid;    
+    grid-template-columns: auto;
+    grid-template-rows: auto;   
+    grid-template-areas: "head"
+                         "navi"
+                         "sec1"
+                         "foot";      
+}
+
+/***************************/
+/** styles for the header **/
+/***************************/
+header {
+    border-bottom: 1px solid black;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    width: 100%;
+    /* assign grid area for the header */
+    grid-area: head;
+}
+header img {
+    float:left;   
+    padding-left: 2%;
+    padding-right: 1%;
+    height: auto;
+    width: 22%;
+    max-width: 80px;
+    min-height: 40px;
+    margin-right: 1em;
+}
+header h2 {
+    color: #1d1d1d;
+    font-size: 200%;
+    text-align: left;
+    padding-bottom: .5em;
+}
+header h3 {
+    font-size: 150%;
+    padding: 0em;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+/*********************************/
+/***styles for the nav menu***/
+/*********************************/
+#mobile_menu {
+    display: none;
+}
+#nav_menu {
+   /* assign grid area for the nav menu */
+    grid-area: navi;
+}
+#nav_menu ul li a.current {
+	color: white;
+}
+#nav_menu ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    position: relative;   
+    width: 100%;
+    /* change navigation menu to use grid layout */
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+}
+#nav_menu a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #5fb0f6;
+    border-bottom: 1px solid #1d1d1d;
+	color: #1d1d1d;
+	font-weight: 700;
+    font-size: 120%;
+}
+#nav_menu ul li {
+    color: #1d1d1d;
+    font-weight: 700;
+}
+#nav_menu li a:visited {
+    color: #1d1d1d;
+}
+#nav_menu ul a:hover, a:focus {
+    color: white;
+    text-decoration: underline;
+}
+/* assign grid areas for the nav menu items */
+#nav_menu #nm1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+#nav_menu #nm2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+#nav_menu #nm3 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+#nav_menu #nm4 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+#nav_menu #nm5 {
+    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+}
+
+/****************************/
+/** styles for the section **/
+/****************************/
+section {
+    color: #1d1d1d;  
+    /* display: grid; */
+    padding: .5em 3em;
+}
+section h1 {
+    font-size: 160%;
+    margin-bottom: .3em;
+}
+section h2 {
+    font-size: 150%;
+    padding: .5em;
+    text-align: center;
+}
+
+/*************************/
+/** styles for the form **/
+/*************************/
+form {
+    font-size: 120%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "personal"
+                         "device"
+                         "issue"
+                         "appt"
+                         "preferred_contact"
+                         "referral_type"
+                         "submit_form";
+}
+fieldset#personal_info {
+    grid-area: personal;
+}
+fieldset#device_info {
+    grid-area: device;
+}
+fieldset#issue {
+    grid-area: issue;
+}
+fieldset#appointment {
+    grid-area: appt;
+}
+fieldset#method_of_contact {
+    grid-area: preferred_contact;
+}
+fieldset#referral {
+    grid-area: referral_type;
+}
+fieldset#submit {
+    grid-area: submit_form;
+}
+legend.form_legend {
+    font-weight: 700;
+    font-size: 120%;
+}
+#other, #comments {
+    height: 5em;
+    width: 30em;
+}
+fieldset {
+   margin-top: 1em;
+   padding-bottom: .25em;
+   margin-bottom: 0em;
+   padding-left: 1em;
+   padding-top: .5em;
+}
+label {
+    float: left;
+    text-align: right;
+    width: 7em;
+    padding-right: .5em;
+    font-size: 100%;
+}
+#personal_info input, select {
+    width: 15em;
+}
+#appointment input {
+    text-align: center;
+    margin-left: 0em;
+}
+textarea {
+    width: 40em;
+    height: 6em;
+    margin-left: 1em;
+}
+#referral label {
+    float: none;
+}
+#method_of_contact label {
+    float: none;
+}
+fieldset#referral {
+    padding-bottom: 1em;
+}
+fieldset#referral p {
+    font-size: 100%;
+    padding-top: 0em;
+    padding-bottom: .5em;
+}
+fieldset#method_of_contact input[type="checkbox"] {
+    margin-left: 3em;
+    padding-bottom: .5em;
+}
+fieldset#method_of_contact {
+    padding-bottom: .75em;
+}
+#referral input[type="radio"] {
+    margin-left: 3em;
+    margin-top: .75em;
+    padding: 0;
+    clear: right;
+}
+#referral p {
+    padding-left: .25em;
+    padding-top: .5em;
+}
+#method_of_contact p {
+    padding-left: .25em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+fieldset#submit {
+    padding: 1.25em .5em;
+}
+fieldset#device_info select, option {
+    text-align: center;
+}
+#submit input[type="reset"]{
+    width: 10em;
+}
+input#submit_now {
+    margin-left: 3em;
+    width: 10em;
+}
+input#start_over {
+    margin-left: .5em;
+}
+input:required {
+    border: 2px solid #5fb0f6;
+}
+input:invalid {
+    border: 2px solid #5fb0f6;
+}
+input:valid {
+    border: 1px solid #1d1d1d;
+}
+textarea#issue_description {
+    width: 90%;
+}
+fieldset#appointment {
+    display: grid;
+    grid-template-areas: "date time";
+}
+fieldset#appointment div#appointment_date {
+    grid-area: date;
+}
+fieldset#appointment div#appointment_time {
+    grid-area: time;
+}
+fieldset#method_of_contact {
+    display: grid;
+    grid-template-areas: "method_of_contact_subtitle . ."
+                         "phone text email";
+}
+fieldset#method_of_contact p {
+    grid-area: method_of_contact_subtitle;
+}
+fieldset#method_of_contact div#method_of_contact_phone {
+    grid-area: phone;
+}
+fieldset#method_of_contact div#method_of_contact_text {
+    grid-area: text;
+}
+fieldset#method_of_contact div#method_of_contact_email {
+    grid-area: email;
+}
+fieldset#referral {
+    display: grid;
+    grid-template-areas: "referral_subtitle . ."
+                         "friend_family online newspaper";
+}
+fieldset#referral p {
+    grid-area: referral_subtitle;
+}
+fieldset#referral div#referral_friend_family {
+    grid-area: friend_family;
+}
+fieldset#referral div#referral_online {
+    grid-area: online;
+}
+fieldset#referral div#referral_newspaper {
+    grid-area: newspaper;
+}
+/***************************/
+/** styles for the footer **/
+/***************************/
+footer {
+    border-top: 1px solid #1d1d1d;
+    background-color: #5fb0f6;
+    grid-area: foot;
+    padding: .5em;
+    }
+footer p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 80%;
+    color: #1d1d1d;
+    padding-top: .25em;
+    padding-bottom: .5em;
+    }
+footer a:link {
+    color: #1d1d1d;
+}
+footer a:visited {
+    color: black;
+}
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+footer a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+/******************************************************************/
+/******************* styles for the media queries******************/
+/******************************************************************/
+@media screen and (max-width: 900px) {
+    body {
+        border: none;
+        font-size: 90%;
+    }
+    section {
+        padding: 1% 5%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    body {
+        font-size: 80%;
+    }
+    /* hide the nav menu */
+    #nav_menu {
+        display: none;
+    }  
+    /* display the slicknav menu */
+    #mobile_menu {
+        /* define the grid area for the mobile menu */
+        grid-area: navi;
+        /* display the mobile menu */
+        display: grid;
+    }
+    /* change background color of slicknav menu and change padding */
+    .slicknav_menu {
+        background: #5fb0f6 !important;
+        padding: 3px;
+        border-bottom: 1px solid black;
+    }
+    .slicknav ul {
+        background-color: #5fb0f6;
+    }
+   /* change background color of slicknav a elements */
+   #mobile_menu a {
+        background: #5fb0f6;
+        color: #1d1d1d;
+        font-size: 115%;
+   }
+   /* change color of a elements on hover or focus */
+   #mobile_menu a:hover, a:focus {
+        color: white;
+   }
+   legend.form_legend {
+    text-align: center;
+    font-size: 98%;
+   }
+   fieldset#appointment {
+        display: grid;
+        justify-content: center;
+        gap: 15%;
+        grid-template-areas: "date"
+                             "time";
+   }
+   fieldset#appointment div {
+    text-align: center;
+   }
+   fieldset#appointment div#appointment_date {
+        grid-area: date;
+   }
+   fieldset#appointment div#appointment_time {
+        grid-area: time;
+   }
+   fieldset#method_of_contact {
+        display: grid;
+        justify-content: center;
+        gap: 5%;
+        grid-template-areas: "subtitle"
+                             "phone"
+                             "text"
+                             "email";
+   }
+   fieldset#method_of_contact p {
+    grid-area: subtitle;
+    padding: 0;
+    padding-bottom: .5em;
+   }
+   fieldset#method_of_contact div#method_of_contact_phone {
+    grid-area: phone;
+   }
+   fieldset#method_of_contact div#method_of_contact_text {
+    grid-area: text;
+   }
+   fieldset#method_of_contact div#method_of_contact_email {
+    grid-area: email;
+    padding-bottom: 1em;
+   }
+   fieldset#referral {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "subtitle"
+                        "friend_family"
+                        "online"
+                        "newspaper";
+   }
+   fieldset#referral p {
+    grid-area: subtitle;
+   }
+   fieldset#referral div#referral_friend_family {
+    grid-area: friend_family;
+   }
+   fieldset#referral div#referral_online {
+    grid-area: online;
+   }
+   fieldset#referral div#referral_newspaper {
+    grid-area: newspaper;
+   }
+   fieldset#submit div#buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "submit_button"
+                        "start_over_button";
+   }
+   fieldset#submit div#submit_now {
+    grid-area: submit_button;
+   }
+   fieldset#submit div#start_over {
+    grid-area: start_over_button;
+   }
+   fieldset#submit input#submit_now {
+    margin: 0;
+   }
+   fieldset#submit input#start_over {
+    margin: 0;
+    margin-top: 1em;
+   }
+}
+
+@media screen and (max-width: 479px){
+    body {
+        font-size: 69%;
+    }
+    section h2 {
+        font-size: 150%;
+        text-align: center;
+    }
+    form_legend {
+        font-size: 70%;
+    }
+}
+
+
+
+
