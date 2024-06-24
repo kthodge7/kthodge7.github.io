@@ -1,0 +1,104 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mama Mac | Apple Repair in Gainesville, FL</title>
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="/styles/normalize.css">
+	<link rel="stylesheet" href="./styles/final.css">
+	<link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo"></a>
+			<h2>Mama Mac</h2>
+			<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
+		<ul>
+			<li id="nm1" ><a href="./index.html" class="current">Home</a></li>
+			<li id="nm2"><a href="./services.html">Services</a></li>
+			<li id="nm3"><a href="./quicktips.html">Quick Tips</a></li>
+			<li id="nm4"><a href="./resources.html">Resources</a></li>
+			<li id="nm5"><a href="./form.html">Contact Form</a></li>
+		</ul>	
+	</nav>
+	<main>
+		<section id="sec1">
+			<h3>Introduction</h3>
+			<h2 class="animation"><strong>Thank you for choosing Mama Mac!</strong> </h2>
+			<p class="p_padding">
+				Get your Apple product back working the way it should. As an Apple-trained 
+				and certified technician, I use Apple-approved diagnostics, tools, and procedures 
+				on every repair. 
+			</p>	
+			<p class="p_padding">Are you thinking about upgrading your computer but don't know what to get?</p>
+			<p class="p_padding">Do you need to have a part replaced on your device?</p>
+			<p class="p_padding">Are you tired of being treated like just another nameless number at those chain stores?</p>
+			<p class="p_padding s_border">If you answered yes to any of those questions, then Mama Mac is the service specialist for you!</p>
+		</section>
+		<aside id="side">
+			<h2 class="h2_size">Quick Tip Links</h2>
+			<ul>
+				<li><a href="quicktips.html">iPhone Not Charging</a></li>
+				<li><a href="quicktips.html#computer_slow">Computer running slowly</a></li>
+				<li><a href="quicktips.html#malware_infection">Malware Infection</a></li>
+				<li><a href="quicktips.html#liquid_spill">Liquid spill</a></li>
+				<li><a href="quicktips.html#dirty_device">Dirty or dusty machines</a></li>
+			</ul>
+		</aside>
+		<section id="sec2">
+			<h2 class="h2_size">Services Offered</h2>
+			<p class="p_padding">
+				Mac repair in Gainesville is among the many services that we offer. Whether it is a 
+				simple fix like a broken screen or malware removal, or something more complicated 
+				like some liquid damage, we can help. 
+			</p>
+			<div id="sec2_div_container">
+				<div id="div1">
+				<h3><a href="services.html#iphone_repair">iPhone Repair</a></h3>
+				<h3><a href="services.html#ipad_repair">iPad Repair</a></h3>
+				<h3><a href="services.html#computer_repair">Computer Repair</a></h3>
+				</div>
+				<div id="div2">
+				<h3><a href="./services.html">Service Pricing</a></h3>
+				<h3><a href="./resources.html">Useful Tools</a></h3>
+				<h3><a href="./form.html">Contact Us</a></h3>
+				</div>
+			</div>
+				<div id="div3">	
+				<img src="./images/apple-imac-repair-service.webp" alt="iMac Repair">
+				<img src="./images/iphone_display.webp" alt="iPhone Repair">
+				<img src="./images/mba_unibody.webp" alt="Unibody Repair">
+			</div>	
+		</section>
+	</main>
+	<footer>
+		<p>Mama Mac</p>
+		<p>&copy; 2023 Kelsey Hodge, ACMT</p>
+		<p>Photo Credit: <a href="https://www.pngkey.com/detail/u2w7y3q8r5o0t4r5_rainbow-apple-logo/">pngkey.com</a></p>
+	</footer>
+</body>
+</html>

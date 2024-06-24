@@ -1,0 +1,187 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/services.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Mama Mac | Services</title>
+    <link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo" width="80"></a>
+		<h2>Mama Mac</h2>
+		<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+    <nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+				<ul>
+                    <li id="nm1"><a href="./index.html">Home</a></li>
+                    <li id="nm2"><a href="./services.html" class="current">Services</a></li>
+                    <li id="nm3"><a href="./quicktips.html">Quick Tips</a></li>
+                    <li id="nm4"><a href="./resources.html">Resources</a></li>
+                    <li id="nm5"><a href="./form.html">Contact Form</a></li>
+                </ul>
+		</nav>
+		<main>
+		<section>
+            <h2>Service Pricing</h2>
+            <p>
+                If your device is in need of repair, you can count on the experts at Mama Mac 
+                to provide you with high-quality service. Our experienced 
+                technicians are familiar with all types of repairs on all types of devices, and can 
+                have your device looking and working like new again in no time. 
+                No matter what type of issue you are experiencing with your device, 
+                we can help. We have experience with water damage, cracked screens, 
+                battery replacements, software issues, and much more.
+            </p>
+                <table id="iphone_repair">
+                    <caption>iPhone</caption>
+                    <thead>
+                        <tr>
+                            <th class="iphone_header">Model</th>
+                            <th class="iphone_header">Diagnostic Fee</th>
+                            <th class="iphone_header">Display Repair</th>
+                            <th class="iphone_header">Battery Repair</th>
+                            <th class="iphone_header">Software Repair</th>
+                            <th class="iphone_header">Device Cleaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6, 7, 8, SE</td>
+                            <td class="row_special" rowspan="5">$25</td>
+                            <td>$60</td>
+                            <td>$45</td>
+                            <td rowspan="5">$30</td>
+                            <td rowspan="5">$20</td>
+                        </tr>
+                        <tr>
+                            <td>X, XR, XS, 11, 11 Pro</td>
+                            <td>$130</td>
+                            <td>$65</td>
+                        </tr>
+                        <tr>
+                            <td>12 mini, 12, 12 Pro</td>
+                            <td>$150</td>
+                            <td>$85</td>
+                        </tr>
+                        <tr>
+                            <td>13, 13 Pro, 14, 14 Pro</td>
+                            <td>$200</td>
+                            <td>$115</td>
+                        </tr>
+                        <tr>
+                            <td>12 Pro Max, 13 Pro Max, 14 Pro Max</td>
+                            <td>$240</td>
+                            <td>$135</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="ipad_repair">
+                    <caption>iPad</caption>
+                    <thead>
+                        <tr>
+                            <th class="ipad_header">Model</th>
+                            <th class="ipad_header">Diagnostic Fee</th>
+                            <th class="ipad_header">Display Repair</th>
+                            <th class="ipad_header">Battery Repair</th>
+                            <th class="ipad_header">Software Repair</th>
+                            <th class="ipad_header">Device Cleaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPad</td>
+                            <td rowspan="3">$25</td>
+                            <td>$40</td>
+                            <td>$70</td>
+                            <td rowspan="3">$30</td>
+                            <td rowspan="3">$20</td>
+                        </tr>
+                        <tr>
+                            <td>iPad Air</td>
+                            <td>$70</td>
+                            <td>$70</td>
+                        </tr>
+                        <tr>
+                            <td>iPad Pro</td>
+                            <td>$100</td>
+                            <td>$85</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table id="computer_repair">
+                    <caption>Computer</caption>
+                    <thead>
+                        <tr>
+                            <th class="computer_header">Model</th>
+                            <th class="computer_header">Diagnostic Fee</th>
+                            <th class="computer_header">Display Repair</th>
+                            <th class="computer_header">Battery Repair</th>
+                            <th class="computer_header">Software Repair</th>
+                            <th class="computer_header">Malware Removal</th>
+                            <th class="computer_header">Device Cleaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook Air</td>
+                            <td rowspan="4">$40</td>
+                            <td>$140</td>
+                            <td>$70</td>
+                            <td rowspan="4">$80</td>
+                            <td rowspan="4">$50</td>
+                            <td rowspan="4">$40</td>
+                        </tr>
+                        <tr>
+                            <td>MacBook Pro Unibody</td>
+                            <td>$120</td>
+                            <td>$85</td>
+                        </tr>
+                        <tr>
+                            <td>MacBook Pro Retina</td>
+                            <td>$215</td>
+                            <td>$95</td>
+                        </tr>
+                        <tr>
+                            <td>iMac</td>
+                            <td>$320</td>
+                            <td>N/A</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">Contact us for quotes on any repair services not listed above.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+        </main>
+		<footer>
+            <p>Mama Mac</p>
+            <p>&copy; 2023 Kelsey Hodge, ACMT</p>
+            <p>Photo Credit: <a href="https://www.pngkey.com/detail/u2w7y3q8r5o0t4r5_rainbow-apple-logo/">pngkey.com</a></p>
+        </footer>
+      
+</body>
+</html>

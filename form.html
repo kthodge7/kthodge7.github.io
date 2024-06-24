@@ -1,0 +1,183 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mama Mac | Contact Us</title>
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="./styles/normalize.css">
+	<link rel="stylesheet" href="./styles/form.css">
+	<link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo" width="80"></a>
+		<h2>Mama Mac</h2>
+		<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li id="nm1" ><a href="./index.html">Home</a></li>
+				<li id="nm2"><a href="./services.html">Services</a></li>
+				<li id="nm3"><a href="./quicktips.html">Quick Tips</a></li>
+				<li id="nm4"><a href="./resources.html">Resources</a></li>
+				<li id="nm5"><a href="./form.html" class="current">Contact Form</a></li>
+			</ul>
+		</nav>
+		<main>
+		<section>
+			<div id="contact_form_page_text">
+				<h2>Contact Us</h2>
+				<p>Fill out this form with your personal and device information, the type of your device, and details on its current issue.
+					We will contact you promptly! Thank you for choosing Mama Mac!</p>
+				</div>
+
+			<form id="contact_form" action="form_submission.html" method="get">
+				<fieldset id="personal_info">
+					<legend class="form_legend">Personal Information</legend>
+						<label for="full_name">* Full Name:</label>
+						<input type="text" name="full_name" id="full_name" autofocus required><br><br>
+						<label for="email">* E-Mail:</label>
+						<input type="email" name="email" id="email" required><br><br>
+						<label for="tel">Phone:</label>
+                        <input type="tel" name="tel" id="tel"><br><br>
+					</fieldset>
+
+					<fieldset id="device_info">
+						<legend class="form_legend">Device Information</legend>
+                        <label for="device_type">Device Type:</label>
+						<select id="device_type" required>
+							<option value="">Select the type of device</option>
+							<option value="iphone">iPhone</option>
+							<option value="ipad">iPad</option>
+							<option value="watch">Apple Watch</option>
+							<option value="ipad">iPad</option>
+							<option value="macbookair">MacBook Air</option>
+							<option value="macbookpro">MacBook Pro</option>
+							<option value="imac">iMac</option>
+							<option value="display">Studio Display</option>
+							<option value="homepod">HomePod</option>
+						</select><br><br>
+                        <label for="device_year">Device Year:</label>
+                        <select name="device_year" id="device_year">
+							<option value="">Year purchased</option>
+							<option value="2012">2012</option>
+							<option value="2013">2013</option>
+							<option value="2014">2014</option>
+							<option value="2015">2015</option>
+                            <option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+                            <option value="2020">2020</option>
+							<option value="2021">2021</option>
+							<option value="2022">2022</option>
+							<option value="2023">2023</option>
+						</select><br><br>
+                        <label for="issue_type">Issue Type:</label>
+						<select id="issue_type">
+							<option value="issue_type">Select the type of issue</option>
+							<option value="nopower">No power</option>
+							<option value="notbooting">Not booting</option>
+							<option value="nodisplay">No image on display</option>
+							<option value="notcharging">Not charging</option>
+							<option value="nocamera">Camera not working</option>
+							<option value="shuttingoff">Shutting off/Restarting randomly</option>
+							<option value="runningslowly">Running slowly</option>
+							<option value="graphicalanomalies">Graphical Anomalies</option>
+							<option value="damaged">Physical damage</option>
+							<option value="malware">Malware</option>
+                            <option value="liquid">Liquid damage</option>
+                            <option value="other">Other</option>
+						</select><br><br>
+					</fieldset>
+
+					<fieldset id="issue">
+						<legend class="form_legend">Issue Description</legend>
+                        <textarea id="issue_description" placeholder="Please describe the issue in detail."></textarea>
+					</fieldset>
+
+					<fieldset id="appointment">
+                        <legend class="form_legend">Choose an appointment date and time</legend>
+                        <div id="appointment_date">
+							Date:&nbsp;&nbsp;
+                        	<input type="date" id="date">
+						</div>
+						<div id="appointment_time">
+							Time:&nbsp;&nbsp;
+							<input type="time" id="time"><br><br>
+						</div>
+                    </fieldset>
+
+					<fieldset id="method_of_contact">
+						<legend class="form_legend">Preferred method of contact</legend>
+						<p>How should we contact you?</p>
+							<div id="method_of_contact_phone">
+								<input type="checkbox" name="contact_method" id="phone" value="phone">
+								<label for="phone">Phone call</label>
+							</div>
+							<div id="method_of_contact_text">
+								<input type="checkbox" name="contact_method" id="text" value="text">
+								<label for="text">Text message</label>
+							</div>
+							<div id="method_of_contact_email">
+								<input type="checkbox" name="contact_method" id="e_mail" value="email">
+								<label for="e_mail">E-mail</label><br>
+							</div>
+					</fieldset>
+
+					<fieldset id="referral">
+						<legend class="form_legend">Referral</legend>
+						<p>How did you hear about us?</p>
+						<div id="referral_friend_family">
+							<input type="radio" name="referral_type" id="friend_family" value="friend_family">
+							<label for="friend_family" id="friend_family_label">Friend or Family</label>
+						</div>
+						<div id="referral_online">
+							<input type="radio" name="referral_type" id="online" value="online">
+							<label for="online" id="online_label">Online</label>
+						</div>
+						<div id="referral_newspaper">
+							<input type="radio" name="referral_type" id="newspaper" value="news">
+							<label for="newspaper">Newspaper</label>
+						</div>
+					</fieldset>
+					
+					<fieldset id="submit">
+						<legend class="form_legend">Process your information</legend>
+						<div id="buttons">
+							<input type="submit" id="submit_now" value="Submit now">
+							<input type="reset" id="start_over" value="Start over">
+						</div>
+					</fieldset>
+				</form>
+		</section>
+	</main>
+	<footer>
+		<p>Mama Mac</p>
+		<p>&copy; 2023 Kelsey Hodge, ACMT</p>
+		<p>Photo Credit: <a href="https://www.pngkey.com/detail/u2w7y3q8r5o0t4r5_rainbow-apple-logo/">pngkey.com</a></p>
+	</footer>
+</body>
+</html>

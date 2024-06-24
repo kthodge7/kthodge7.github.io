@@ -1,0 +1,106 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/resources.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Mama Mac | Resources</title>
+    <link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo" width="80"></a>
+		<h2>Mama Mac</h2>
+		<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li id="nm1"><a href="./index.html">Home</a></li>
+				<li id="nm2"><a href="./services.html">Services</a></li>
+				<li id="nm3"><a href="./quicktips.html">Quick Tips</a></li>
+				<li id="nm4"><a href="./resources.html" class="current">Resources</a></li>
+				<li id="nm5"><a href="./form.html">Contact Form</a></li>
+			</ul>
+		</nav>
+		<main>
+			<section>
+				<h2>Resources</h2>
+				<h3 id="malware_removal">Malware Removal Tool</h3>
+					<ul>
+						<li>
+							Malwarebytes Anti-Malware 30-day trial for Mac: <a href="https://www.malwarebytes.com/mac">MalwareBytes</a>
+						</li>
+						
+					</ul>
+				<h3 id="apple_articles">Helpful Apple Service Articles</h3>
+					<ul>
+						<li>
+							<a id="disk_utility" href="https://support.apple.com/en-us/HT210898">How to repair a Mac disk with Disk Utility</a>
+						</li>
+						<li>
+							<a href="https://support.apple.com/guide/apple-configurator-mac/revive-or-restore-an-intel-based-mac-apdebea5be51/mac">Revive 
+								or restore an Intel-based Mac using Apple Configurator</a>
+						</li>
+						<li>
+							<a href="https://support.apple.com/guide/apple-configurator-mac/revive-or-restore-a-mac-with-apple-silicon-apdd5f3c75ad/mac">
+								Revive or restore a Mac with Apple silicon using Apple Configurator
+							</a>
+						</li>
+					</ul>
+				<h3 id="ifixit">Service Guides</h3>
+				<ul>
+					<li>You can find hundreds of step-by-step service guides and tools available 
+						for all Apple devices on the <a href="https://www.ifixit.com/">iFixit website.</a>
+					</li>
+					<li><a href="https://www.youtube.com/@rossmanngroup/playlists">Louis Rossmann's</a> youtube channel features 
+						board-level repair videos and guides for laptops and handheld devices.
+					</li>
+				</ul>
+				<h3 id="data_rescue">Data Recovery Tools</h3>
+				<ul>
+					<li>
+						<a href="https://www.prosofteng.com/mac-data-recovery">Prosoft Data Rescue</a> can perform
+						deep and deleted data scans on drives in cases when a drive has failed or data has accidentally been deleted.
+					</li>
+				</ul>
+				<h3>My favorite Apple Keyboard Shortcuts</h3>
+				<ul>
+					<li>Send an item directly to the trash: Command + Delete</li>
+					<li>Select and deselect specific items from a list or group: Command + Click each item</li>
+					<li>Take a screenshot of a screen area of your choosing: Shift + Command + 4</li>
+					<li>And many, many <a href="https://support.apple.com/en-us/HT201236">more!</a></li>
+				</ul>
+				<h3>iOS 17 Preview</h3>
+					<p>Check out the awesome new features coming in iOS 17!</p>
+					<video id="videoplayer" src="./images/media/iOS_17_Hands_On.mp4" title="iOS 17 Preview" controls></video>
+					<p id="video_credit">Video Credit: <a href="https://www.youtube.com/@mkbhd">Marques Brownlee</a></p>
+				</section>
+        </main>
+		<footer>
+			<p>Mama Mac</p>
+			<p>&copy; 2023 Kelsey Hodge, ACMT</p>
+			<p>Photo Credit: <a href="https://www.pngkey.com/detail/u2w7y3q8r5o0t4r5_rainbow-apple-logo/">pngkey.com</a></p>
+		</footer>
+</body>
+</html>

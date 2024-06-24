@@ -1,0 +1,145 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/quicktips.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Mama Mac | Quick Tips</title>
+    <link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo" width="80"></a>
+		<h2>Mama Mac</h2>
+		<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+        <nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li id="nm1"><a href="./index.html">Home</a></li>
+				<li id="nm2"><a href="./services.html">Services</a></li>
+				<li id="nm3"><a href="./quicktips.html" class="current">Quick Tips</a></li>
+				<li id="nm4"><a href="./resources.html">Resources</a></li>
+				<li id="nm5"><a href="./form.html">Contact Form</a></li>
+			</ul>
+		</nav>
+		<main>
+           
+        <section>
+            <h2>Quick Tips</h2>
+            <h3 id="iphone_not_charging">iPhone not charging</h3>
+                <ul>
+                    <li>
+                        Lint easily gets inside the charge port,
+                        and can be packed down overtime from plugging in the charging cable.
+                        Use a paperclip or similar tool to gently scrape
+                        the charge port for debris. Continue gently scraping until all of
+                        the lint is removed and test your iPhones charge function.
+                    </li>
+                    <li>
+                        The charge port may have been exposed to liquid, even a 
+                        single raindrop can cause a buildup of corrosion inside
+                        the charge port! If your iPhone is wireless charging capable, test 
+                        to see if it can take a charge wirelessly.
+                    </li>
+                </ul>
+            <h3 id="computer_slow">Computer running slowly</h3>
+                <ul>
+                    <li>
+                        The macOS operating system naturally over time builds up junk files and
+                        corruption that can slow the system down. You can find
+                        a built-in Disk Utility application located in the Utilities folder
+                        in the Applications list. 
+                    </li>
+                    <li>
+                        Open the <a href="./resources.html#disk_utility">Disk Utility</a> app to run First Aid on the drive to evaluate
+                        the health of the drive and macOS, as well as repair any corrupted files.
+                    </li>
+                </ul>
+            <h3 id="malware_infection">Malware Infection</h3>
+            <ul>
+                <li>
+                    In the past, Apple devices were robust in their ability to
+                    prevent malicious software and bad actors from gaining access
+                    to the operating system. Unfortunately, this is no longer the case
+                    as new viruses and malware are being engineered every day. 
+                </li>
+                <li>
+                    If you suspect your device has been exposed to or infected with malware,
+                    we suggest downloading and running an anti-malware tool called MalwareBytes.
+                    MalwareBytes is highly effective at detecting and removing any known malicious 
+                    software present on your device. This tool has a 
+                    free trial period, and can accessed from our <a href="./resources.html#malware_removal">resources</a> page.
+                </li>
+            </ul>
+            <h3 id="liquid_spill">Liquid Spill</h3>
+            <ul>
+                <li>
+                    Liquid spills and device liquid exposure can happen to anyone. When any type of liquid gets on the electrical
+                    and metal components inside your Apple device, a substance called corrosion can start forming on the components
+                    immediately. This occurs when the negative ions present in the liquid begin reacting with the metal and causing
+                    the metal to ionize, or breakdown, resulting in the formation of this greenish-white substance. These small components are very delicate, and are connected through electrical 
+                    circuits in such a way that even a small area of corrosion involving one or two chips can prevent all down-stream 
+                    processes to fail and render your device unusable.
+                </li>
+                <li>
+                    Often times areas that have been exposed to liuqid and have accumulated corrosion can be cleaned to restore normal
+                    functionality to the liquid exposed device. If the corrosion is removed and these small electrical components have not been
+                    damaged or burnt to a point of failure, the capacity of the electrical components to send and receive electrical signals, and properly
+                    support device function can be restored. 
+                </li>
+                <li>We offer liquid spill cleaning services! Fill out our <a href="./form.html">contact form</a> to begin the 
+                service process.</li>
+            </ul>
+            <h3 id="dirty_device">Dirty or dusty machines</h3>
+            <ul>
+                <li>Folks often are not sure of the best way to clean the display of their Apple devices. We recommend
+                    using a high-value isopropyl alcohol wipe or solution (70% - 91%) to gently clean the display, and 
+                    a micro-fiber cloth for drying it off and buffing out any remaining fingerprints.
+                </li>
+                <li>
+                    Almost every Apple computer contains one to two fans. Primarly, fans will push hot air out 
+                    of the machine vents to help the internal components maintain a normal temperature and prevent 
+                    them from getting too hot. However, fans also pull dust and dirt into the machine, and cause an 
+                    abnormal amount of buildup on their blades as well as the other internal components. I have seen 
+                    fans fully packed with dust and debris that has built up over time, and device owners who 
+                    were not aware of this possibility. We highly recommend regularly removing the dust and debris 
+                    from the inside of your machine. If you are comfortable opening your device, vacuum it out regularly 
+                    to prevent this type of build-up. We also offer device cleaning services which include full device disassembly and careful vacuumming and dusting of each component 
+                    to restore the components to their original clean state.
+                </li>
+                <li>We offer dirty device cleaning services! Fill out our <a href="./form.html">contact form</a> to begin the 
+                    service process.</li>
+            </ul>
+        </section>
+        
+        </main>
+		<footer>
+            <p>Mama Mac</p>
+            <p>&copy; 2023 Kelsey Hodge, ACMT</p>
+            <p>Photo Credit: <a href="https://www.pngkey.com/detail/u2w7y3q8r5o0t4r5_rainbow-apple-logo/">pngkey.com</a></p>
+        </footer>
+      
+</body>
+</html>

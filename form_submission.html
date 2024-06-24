@@ -1,0 +1,61 @@
+<!-- 
+Author: Kelesy Hodge
+Course: CGS1821.0M1
+Date: 08/02/23
+Assignment: Final Project
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mama Mac | Form Submitted</title>
+	<link rel="shortcut icon" href="./images/favicon.ico">
+	<link rel="stylesheet" href="/styles/normalize.css">
+	<link rel="stylesheet" href="./styles/form_submission.css">
+	<link rel="stylesheet" href="./styles/slicknav.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script>
+		$(document) .ready(function() {
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+		});
+	</script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a href="./index.html"><img src="./images/applerainbow.webp" alt="Rainbow Apple Logo" width="80"></a>
+		<h2>Mama Mac</h2>
+		<h3>Apple Repair Services in Gainesvile, FL</h3>
+	</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li id="nm1" ><a href="./index.html">Home</a></li>
+				<li id="nm2"><a href="./services.html">Services</a></li>
+				<li id="nm3"><a href="./quicktips.html">Quick Tips</a></li>
+				<li id="nm4"><a href="./resources.html">Resources</a></li>
+				<li id="nm5"><a href="./form.html" class="current">Contact Form</a></li>
+			</ul>
+		</nav>
+        <main>
+            <section id="submission_received">
+                <h2 >Your submission has been received.</h2>
+                <p>We will review your information and contact you promptly to follow up!
+                    Thank you for choosing Mama Mac!
+                </p>
+            </section>              
+        </main>
+        <footer>
+            <p>Mama Mac</p>
+            <p>&copy; 2023 Kelsey Hodge, ACMT</p>
+        </footer>
+    </body>
+    </html>
